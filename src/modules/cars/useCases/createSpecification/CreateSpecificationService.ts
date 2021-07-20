@@ -1,7 +1,5 @@
-import { ICreateCategoryDTO } from "../dtos/ICreateCategoryDTO";
-import { CategoriesRepository } from "../repositories/CategoriesRepository";
-import { ICategoriesRepository } from "../repositories/ICategoriesRepository";
-import { ISpecificationsRepository } from "../repositories/ISpecificationsRepository";
+
+import { ISpecificationsRepository } from "../../repositories/ISpecificationsRepository";
 
 interface IRequest {
   name: string;

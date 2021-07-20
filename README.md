@@ -43,6 +43,10 @@
 ## 🔖 Front-End App
 
 - Under construction 🚧
+- Under construction 🚧
+- Under construction 🚧
+- Under construction 🚧
+
 
 
 ## 🏃‍♂️ Running the project

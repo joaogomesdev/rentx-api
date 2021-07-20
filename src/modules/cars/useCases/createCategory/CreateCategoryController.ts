@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import { CreateCategoriesService } from './CreateCategoriesService';
+import { CreateCategoryService } from './CreateCategoryService';
 
-class CreateCategoriesController {
+class CreateCategoryController {
 
   constructor(
-    private createCategoryService: CreateCategoriesService
+    private createCategoryService: CreateCategoryService
   ) {}
   handle(request: Request, response: Response) {
     const { 
@@ -19,5 +19,5 @@ class CreateCategoriesController {
 }
 
 export {
-  CreateCategoriesController
+  CreateCategoryController
 }

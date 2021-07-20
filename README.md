@@ -3,7 +3,7 @@
   Welcome to Rentx API 👋
 </h1>
 <h1 align="center">
- <img alt="Rentx API " height="100" title="" src="https://i.imgur.com/k5loCYF.png />
+ <img alt="Rentx API " height="100" title="" src="https://i.imgur.com/k5loCYF.png" />
 </h1>
 
 <p align="center">

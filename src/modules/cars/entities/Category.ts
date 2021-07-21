@@ -25,7 +25,5 @@ class Category {
 }
 
 export { Category };
-  function PrimaryColomn() {
-    throw new Error("Function not implemented.");
-  }
+
 

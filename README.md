@@ -37,6 +37,7 @@
 - [ ] Docker 
 - [ ] Docker compose
 - [ ] TypeORM 
+- [ ] Migrations
 
 
 ## 🌱 Swagger DOCS

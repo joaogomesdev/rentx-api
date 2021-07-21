@@ -34,6 +34,9 @@
 - [X] Node FS Steam
 - [X] CSV Parse
 - [X] Swagger
+- [ ] Docker 
+- [ ] Docker compose
+- [ ] TypeORM 
 
 
 ## 🌱 Swagger DOCS

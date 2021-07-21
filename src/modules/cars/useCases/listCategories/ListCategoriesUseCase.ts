@@ -3,7 +3,7 @@ import { Category } from '../../model/Category';
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 
-class ListCategoriesService {
+class ListCategoriesUseCase {
     constructor(
       private categoriesRepository: ICategoriesRepository
     ){}
@@ -16,5 +16,5 @@ class ListCategoriesService {
 }
 
 export {
-  ListCategoriesService
+  ListCategoriesUseCase
 }

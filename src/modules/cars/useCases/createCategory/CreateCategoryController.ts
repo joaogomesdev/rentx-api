@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import { CreateCategoryService } from './CreateCategoryService';
+import { CreateCategoryUseCase } from './CreateCategoryUseCase';
 
 class CreateCategoryController {
 
   constructor(
-    private createCategoryService: CreateCategoryService
+    private createCategoryUseCase: CreateCategoryUseCase
   ) {}
   handle(request: Request, response: Response) {
     const { 
@@ -12,7 +12,7 @@ class CreateCategoryController {
       description,
     } = request.body;
   
-    this.createCategoryService.execute({ name, description })
+    this.createCategoryUseCase.execute({ name, description })
     
     return response.status(201).send();
   }

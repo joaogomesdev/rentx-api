@@ -1,15 +1,15 @@
 import { Request, Response } from 'express'
-import { ImportCategoriesService } from './ImportCategoriesService';
+import { ImportCategoriesUseCase } from './ImportCategoriesUseCase';
 
 class ImportCategoriesController {
   
   constructor(
-    private importCategoriesService: ImportCategoriesService
+    private importCategoriesUseCase: ImportCategoriesUseCase
   ){}
 
   handle(request: Request, response: Response): Response{
     const { file }  = request
-    this.importCategoriesService.execute(file)
+    this.importCategoriesUseCase.execute(file)
     
     return response.send()
   }

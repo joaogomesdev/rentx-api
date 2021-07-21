@@ -1,15 +1,15 @@
 import { Request, Response } from 'express'
-import { ListCategoriesService } from './ListCategoriesService';
+import { ListCategoriesUseCase } from './ListCategoriesUseCase';
 
 
 class ListCategoriesController {
 
   constructor(
-    private listCategoriesService: ListCategoriesService
+    private listCategoriesUseCase: ListCategoriesUseCase
   ) {}
 
   handle(request: Request, response: Response) : Response {
-    const all = this.listCategoriesService.execute()
+    const all = this.listCategoriesUseCase.execute()
 
     return response.json(all);
   }

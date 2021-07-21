@@ -4,7 +4,7 @@ import csvParse from 'csv-parse';
 import { CategoriesRepository } from '../../repositories/implementations/CategoriesRepository';
 import { IImportCategoryDTO } from '../../dtos/IImportCategoryDTO';
 
-class ImportCategoriesService {
+class ImportCategoriesUseCase {
   constructor(
     private categoriesRepository: CategoriesRepository
   ){}
@@ -29,6 +29,7 @@ class ImportCategoriesService {
             })
           })
           .on('end', () => {
+            fs.promises.unlink(file.path)
             resolve(categories)
           })
           .on('error', (error) => {
@@ -58,4 +59,6 @@ class ImportCategoriesService {
   }
 }
 
-export { ImportCategoriesService }
+export { 
+  ImportCategoriesUseCase 
+}

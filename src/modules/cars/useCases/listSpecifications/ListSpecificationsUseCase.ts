@@ -2,7 +2,7 @@ import { Specification } from "../../model/Specification";
 import { ISpecificationsRepository } from "../../repositories/ISpecificationsRepository";
 
 
-class ListSpecificationsService {
+class ListSpecificationsUseCase {
     constructor(
       private specificationsRepository: ISpecificationsRepository
     ){}
@@ -15,5 +15,5 @@ class ListSpecificationsService {
 }
 
 export {
-  ListSpecificationsService
+  ListSpecificationsUseCase
 }

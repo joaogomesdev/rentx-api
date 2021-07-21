@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import { CreateSpecificationService } from './CreateSpecificationService';
+import { CreateSpecificationUseCase } from './CreateSpecificationUseCase';
 
 class CreateSpecificationController {
 
   constructor(
-    private createSpecificationService: CreateSpecificationService
+    private createSpecificationUseCase: CreateSpecificationUseCase
   ) {}
   handle(request: Request, response: Response) {
     const { 
@@ -12,7 +12,7 @@ class CreateSpecificationController {
       description,
     } = request.body;
     
-    this.createSpecificationService.execute({ name, description })
+    this.createSpecificationUseCase.execute({ name, description })
     return response.status(201).send();
   }
 }

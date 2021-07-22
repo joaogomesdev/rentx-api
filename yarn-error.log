@@ -1,5 +1,5 @@
 Arguments: 
-  /home/joaogomes/.nvm/versions/node/v14.17.3/bin/node /home/joaogomes/.nvm/versions/node/v14.17.3/bin/yarn typeorm migration:run
+  /home/joaogomes/.nvm/versions/node/v14.17.3/bin/node /home/joaogomes/.nvm/versions/node/v14.17.3/bin/yarn add tsryinge
 
 PATH: 
   /home/joaogomes/.nvm/versions/node/v14.17.3/bin:/home/joaogomes/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,12 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/joaogomes/Projects/www/Rocketseat/Ignite/node/rentx/package.json: Unexpected token < in JSON at position 100
-      at JSON.parse (<anonymous>)
-      at /home/joaogomes/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/home/joaogomes/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /home/joaogomes/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/tsryinge: Not found
+      at Request.params.callback [as _callback] (/home/joaogomes/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/joaogomes/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:375:28)
+      at Request.<anonymous> (/home/joaogomes/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:375:28)
+      at IncomingMessage.<anonymous> (/home/joaogomes/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:481:28)
+      at IncomingMessage.emit (events.js:387:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
 
 npm manifest: 
   {
@@ -28,13 +33,8 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-  <<<<<<< HEAD
-      "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules  --respawn src/server.ts",
-      "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
-  =======
       "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules  --respawn src/server.ts",
       "typeorm": "tsnd ./node_modules/typeorm/cli"
-  >>>>>>> main
     },
     "dependencies": {
       "@types/express": "^4.17.13",

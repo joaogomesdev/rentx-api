@@ -24,7 +24,6 @@ class CategoriesRepository implements ICategoriesRepository {
     const category = await this.repository.create({ name, description})
 
     await this.repository.save(category)
-    
   }
 
   async list(): Promise<Category[]> {

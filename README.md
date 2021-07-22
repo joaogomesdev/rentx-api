@@ -1,4 +1,3 @@
-
 <h1 align="center">
   Welcome to Rentx API 👋
 </h1>
@@ -11,10 +10,9 @@
  <img src="https://i.imgur.com/KazVzko.png" alt="APP"/>
 </p>
 
-
-
 ## 💻 Project
-  🚗 An API REST for the Rentx application, used to rent cars 💨
+
+🚗 An API REST for the Rentx application, used to rent cars 💨
 
 ## 🔨 Features
 
@@ -24,22 +22,22 @@
 
 ## ✨ Technologies
 
-- [X] Typescript
-- [X] Express
-- [X] Multer
-- [X] uuid
-- [X] Eslint
-- [X] Prittier
-- [X] ts-node-dev
-- [X] Node FS Steam
-- [X] CSV Parse
-- [X] Swagger
-- [ ] Docker 
+- [x] Typescript
+- [x] Express
+- [x] Multer
+- [x] uuid
+- [x] Eslint
+- [x] Prettier
+- [x] ts-node-dev
+- [x] Node FS Steam
+- [x] CSV Parse
+- [x] Swagger
+- [ ] Docker
 - [ ] Docker compose
-- [ ] TypeORM 
+- [ ] TypeORM
 - [ ] Migrations
-
-
+- [ ] Tsyringe Dependency Injection
+ 
 ## 🌱 Swagger DOCS
 
 - Under construction 🚧
@@ -51,8 +49,6 @@
 - Under construction 🚧
 - Under construction 🚧
 
-
-
 ## 🏃‍♂️ Running the project
 
 Clone the repository
@@ -62,5 +58,3 @@ Clone the repository
 ## 🟣 Insomnia
 
 - Under construction 🚧
-
- 

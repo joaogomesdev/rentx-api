@@ -18,15 +18,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string"
-                  }
-                },
+                "ref": "#/definations/Category",
                 "example": {
                   "name": "Category name",
                   "description": "Category description"
@@ -70,6 +62,84 @@
           }
         }
       }
+    },
+    "/specifications": {
+      "post": {
+        "tags": ["Specification"],
+        "summary": "Create a specification",
+        "description": "Create a new specification",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "ref": "#/definations/Specification",
+                "example": {
+                  "name": "Specification name",
+                  "description": "Specification description"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Specification alredy exists"
+          }
+        }
+      },
+      "get" : {
+        "tags": ["Specification"],
+        "summary": "List all specifications",
+        "description": "List all specification",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Specification": {
+      "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+      }
+    },
+    "Category": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
     }
   }
+
 }
